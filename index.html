@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>paws to adopt</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	</head>
+	<body>
+		<!-- <div ng-controller="signIn"> -->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Paws To Adopt</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#home">Home</a>
+						</li>
+						<li>
+							<a href="#adopt">Adopt A Dog</a>
+						</li>
+						<li>
+							<a href="#signIn">Sign In</a>
+						</li>
+						<li>
+							<a href="#lost&found">Lost And Found </a>
+						</li>
+					</ul>
+				</div>
+				<!-- </div> -->
+			</nav>
+			<div class="clearBox"></div>
+		</div>
+		<div class="clearBox"></div>
+		<div ng-view></div>
+
+		<script src="node_modules/angular/angular.js" ></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="app/config.js"></script>
+		<script src="app/route.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="app/controllers/adopt.js"></script>
+		<script src="app/controllers/lost&found.js"></script>
+		<script src="app/controllers/signIn.js"></script>
+	</body>
+</html>

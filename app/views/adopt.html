@@ -1,8 +1,27 @@
-<div ng-controller="adopt">
-	name:{{data.name}}<br />
-	age:{{data.age}}<br />
-	breed:{{data.breed}}<br />
-	location:{{data.location}}<br />
+<ul id="info" ng-controller="adopt">
+	<li ng-repeat="data in dataList">
+		<div class="flip"> 
+        <div class="front"> 
+		<img ng-src="uploads/{{data.file}}"  />
+		    </div> 
+    <div class="back">
+       	
+		name:{{data.name}}
+		<br />
+		age:{{data.age}}
+		<br />
+		breed:{{data.breed}}
+		<br />
+		location:{{data.location}}
+		<br />
+		email:{{data.email}}
+		
+    </div> 
+</div>
 	
-	</div>
+	</li>
+</ul>
+
+
+    
 

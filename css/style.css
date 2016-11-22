@@ -11,3 +11,28 @@
 	overflow:hidden;
 	clear: both;
 }
+#info li {
+        list-style-type: none;
+        float: left;
+        margin: 20px;
+        
+}
+
+#info li div{
+	padding-top:4%;
+}
+
+.flip {
+    height: 199px;
+    width: 300px;
+    margin: 0 auto;
+}
+.flip .front img {
+    width: 300px;
+    height: auto;
+}
+.flip .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+}

@@ -1,3 +1,11 @@
+<script>
+	$(function(){
+    $(".flip").flip({
+        trigger: 'hover'
+    });
+});
+</script>
+
 <ul id="info" ng-controller="adopt">
 	<li ng-repeat="data in dataList">
 		<div class="flip"> 
@@ -12,9 +20,10 @@
 		<br />
 		breed:{{data.breed}}
 		<br />
-		location:{{data.location}}
+		
+		<a target="_blank" href="http://maps.google.com/?q={{data.location}}">location:{{data.location}}</a> 
 		<br />
-		email:{{data.email}}
+		<a href="mailto:{{data.email}}">email:{{data.email}}</a> 
 		
     </div> 
 </div>

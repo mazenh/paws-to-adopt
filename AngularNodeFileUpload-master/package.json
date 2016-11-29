@@ -1,0 +1,17 @@
+{
+  "name": "upload_image",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "4.13.3",
+    "multer": "1.1.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "Server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

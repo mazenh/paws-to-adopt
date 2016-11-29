@@ -14,25 +14,28 @@
 #info li {
         list-style-type: none;
         float: left;
-        margin: 20px;
+        margin: 10px;
         
 }
 
-#info li div{
-	padding-top:4%;
+.back a {
+	color: #fff;
+	text-decoration:none;
 }
 
 .flip {
-    height: 199px;
+    height: 200px;
     width: 300px;
     margin: 0 auto;
 }
 .flip .front img {
     width: 300px;
-    height: auto;
+    height: 200px;
 }
 .flip .back {
     background: #2184cd;
     color: #fff;
     text-align: center;
 }
+
+

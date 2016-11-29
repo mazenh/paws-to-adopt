@@ -1,0 +1,21 @@
+<html ng-app="app">
+	<head>
+		<title>File upload Node.</title>
+	</head>
+	<body>
+		<form>
+			<div ng-controller = "ManageUploadCtrl">
+				<input type = "file" file-Upload = "myFile"/>
+				<button ng-click = "uploadFile()">
+					Upload Image
+				</button>
+			</div>
+
+		</form>
+	</body>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="app/config.js"></script>
+	<script src="app/controllers/ManageUploadCtrl.js"></script>
+	<script src="app/services/fileService.js"></script>
+	<script src="app/directive/fileUpload.js"></script>
+</html>

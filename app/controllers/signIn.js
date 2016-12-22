@@ -1,7 +1,7 @@
 (function() {
 	var app = angular.module("app");
 	app.controller("signIn", signIn);
-	function signIn($scope,fileService) {
+	function signIn($scope,fileService,$window) {
 		 function send(image) {
 		 	var myData=localStorage.getItem("data");
 		 	myData=JSON.parse(myData);
@@ -25,8 +25,8 @@
 			console.log("file", file);
 			fileService.uploadFileToUrl(file, url);
 			send(file);
+			$window.location.href = "#adopt";
 		};
-
 	}
 
 })();

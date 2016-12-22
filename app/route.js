@@ -5,8 +5,8 @@ app.config(function($routeProvider) {
     .when("/adopt", {
         templateUrl : "app/views/adopt.html"
       })
-      .when("/lost&found", {
-        templateUrl : "app/views/lost&found.html"
+      .when("/signUp", {
+        templateUrl : "app/views/signUp.html"
       })
       .when("/signIn", {
         templateUrl : "app/views/signIn.html"

@@ -71,4 +71,28 @@
     width:100%;
 	
 }
+
+#enter{
+	list-style-type:none;
+	float:left;
+	overflow: hidden;
+	
+}
+
+.adoption{
+	display:inline;
+	
+}
+.adoption img{
+	height:250px;
+	width:300px;
+	padding-left:20px;
+   
+}
  
+#chose{
+	margin:0 auto;
+	width:650px;
+	
+}
+

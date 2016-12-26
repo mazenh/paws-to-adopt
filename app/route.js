@@ -14,9 +14,10 @@ app.config(function($routeProvider) {
         .when("/about", {
         templateUrl : "app/views/about.html"
       })
-        .when("/contactUs", {
-        templateUrl : "app/views/contactUs.html"
+        .when("/home", {
+        templateUrl : "app/views/home.html"
       })
+      
 
 .otherwise({
 	redirectTo:'/'

@@ -11,6 +11,12 @@ app.config(function($routeProvider) {
       .when("/signIn", {
         templateUrl : "app/views/signIn.html"
       })
+        .when("/about", {
+        templateUrl : "app/views/about.html"
+      })
+        .when("/contactUs", {
+        templateUrl : "app/views/contactUs.html"
+      })
 
 .otherwise({
 	redirectTo:'/'

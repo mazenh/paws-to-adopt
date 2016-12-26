@@ -5,9 +5,10 @@
     });
 });
 </script>
-
+<div id="background-color">
+<input class="form-control" id="inputdefault" ng-model="search" placeholder="search" />
 <ul id="info" ng-controller="adopt">
-	<li ng-repeat="data in dataList">
+	<li ng-repeat="data in dataList | filter:search">
 		<div class="flip"> 
         <div class="front"> 
 		<img ng-src="uploads/{{data.file}}"  />
@@ -20,6 +21,8 @@
 		<br />
 		breed:{{data.breed}}
 		<br />
+		lost/found:{{data.lostAndFound}}
+		<br />
 		
 		<a target="_blank" href="http://maps.google.com/?q={{data.location}}">location:{{data.location}}</a> 
 		<br />
@@ -30,7 +33,7 @@
 	
 	</li>
 </ul>
-
+</div>
 
     
 
